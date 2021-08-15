@@ -1,0 +1,243 @@
+.block-2 {
+    .block-2__container {
+        
+        padding: 80px 0 90px 0;
+        // 580
+        height: 410px;
+        color: #224a60;
+        .block-2__column {
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .block-2__header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 50px;
+                .block-2__header__title {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 58px;
+                    font-weight: 700;
+                    
+                    margin-bottom: 22px;
+                }
+                .block-2__header__subtitle {
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: italic;
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+            }
+            .block-2__steps-box {
+                display: flex;
+                justify-content: space-between;
+                .card {
+                    flex-direction: column;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    min-height: 270px;
+                    width: 210px;
+                    .card__img {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 106px;
+                        height: 118px;
+                        background: no-repeat url(../img/block-2/block-2__background.png);
+                        & img {
+                            display: block;
+                            margin: auto;
+                        }
+                    }
+                    .card__title {
+                        font-family: 'Bebas Neue Bold';
+                        font-weight: 700;
+                        font-size: 22px;
+                        text-transform: uppercase;
+                        color: #2c5871;
+                        line-height: 27px;
+                        text-align: center;
+                        padding: 23px 20px 27px;
+                    }
+                    .card__text {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #7b7b7b;
+                        text-align: center;
+                        line-height: 24px;
+                    }
+                }
+                .card__separator {
+                    margin-top: 45px;
+                } 
+            }
+        }
+    }
+    @media (max-width: $md1+px) {
+        .block-2__container {
+            height: 400px;
+            padding: 60px 0 70px 0;
+            .block-2__column {
+                margin-bottom: 0;
+                .block-2__header {
+                    margin-bottom: 46px;
+                    .block-2__header__title {
+                        font-size: 50px;
+                        
+                        margin-bottom: 18px;
+                    }
+                    .block-2__header__subtitle {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+                .block-2__steps-box {
+                    .card {
+                        min-height: 210px;
+                        width: 180px;
+                        
+                        .card__title {
+                            padding: 26px 2px 39px;
+                        }
+                        .card__text {
+                            font-size: 13px;
+                            color: #7b7b7b;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+        }
+           
+    }
+    
+    @media (max-width: $md2+px) {
+        .block-2__container {
+            height: 360px;
+            // min-height: 360px;
+            
+            padding: 60px 0 60px 0;
+            .block-2__column {
+                margin-bottom: 0;
+                .block-2__header {
+                    
+                    margin-bottom: 34px;
+                    .block-2__header__title {
+                        
+                        font-size: 45px;
+                        font-weight: 700;
+                        
+                        margin-bottom: 19px;
+                    }
+                    .block-2__header__subtitle {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+                .block-2__steps-box {
+                    .card {
+                        
+                        min-height: 250px;
+                        width: 132px;
+                        
+                        .card__title {
+                            
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            color: #2c5871;
+                            line-height: 22px;
+                            text-align: center;
+                            padding: 17px 0 25px;
+                        }
+                        .card__text {
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 20px;
+                        }
+
+                    }
+                    .card__separator {
+                        margin-top: 45px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: $md3+px) {
+        .block-2__container {
+            height: 500px;
+            padding: 30px 0 40px 0;
+            .block-2__column {
+                margin-bottom: 0;
+                
+                .block-2__header {
+                    text-align: center;
+                    margin-bottom: 24px;
+                    .block-2__header__title {
+                        
+                        font-size: 26px;
+                        font-weight: 700;
+                        
+                        margin-bottom: 18px;
+                    }
+                    .block-2__header__subtitle {
+                        
+                        font-size: 17px;
+                        font-weight: 600;
+                        line-height: 20px;
+                    }
+                }
+                .block-2__steps-box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .card {
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        min-height: 84px;
+                        width: 240px;
+                        margin-bottom: 10px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .card__img {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 76px;
+                            height: 84px;
+                            background: no-repeat url(../img/block-2/block-2__background.png);
+                            background-size: 76px 84px;
+                            & img {
+                                width: 60%;
+                                height: 60%;
+                            }
+                        }
+                        .card__title {
+                            max-width: 145px;
+                            font-weight: 600;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            color: #2c5871;
+                            line-height: 22px;
+                            text-align: left;
+                            padding: 0 0 0 17px;
+                        }
+                        .card__text {
+                            display: none;
+                        }
+    
+                    }
+                    .card__separator {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+    }
+}
